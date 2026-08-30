@@ -1,2 +1,8 @@
-node_modules
-node_modules
+node_modules/
+dist/
+__pycache__/
+server/venv/
+*.pyc
+.env
+.DS_Store
+*.log
