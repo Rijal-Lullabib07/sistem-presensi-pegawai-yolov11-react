@@ -5,7 +5,6 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "",
     "healthcheckPath": "/api/face/status",
     "healthcheckTimeout": 100
   }

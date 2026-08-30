@@ -15,6 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy server code
 COPY server/ .
 
-EXPOSE 5000
+EXPOSE $PORT
 
-CMD ["gunicorn", "app:app", "--host", "0.0.0.0", "--port", "5000", "--timeout", "30", "--workers", "1"]
+CMD gunicorn app:app --bind 0.0.0.0:$PORT --timeout 30 --workers 1
